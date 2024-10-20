@@ -1,0 +1,276 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    --bs-box-shadow: 0 0.5rem 1rem rgba(164, 19, 60, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(164, 19, 60, 0.2);
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-text {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 2;
+    padding: 15px;
+    /* background: rgba(0, 0, 0, 0.6); */
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.project-text h5,
+.project-text p {
+    margin: 0;
+}
+
+.project-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(89, 13, 34, 0.9), transparent);
+    z-index: 1;
+}
+
+.work-section i,
+.achievements-section i,
+.achievements-section a {
+    color: #C9184A !important;
+}
+
+.card-footer a i {
+    transition: color 0.3s ease;
+    color: #C9184A;
+}
+
+.card-footer a:hover i {
+    color: #800F2F;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+.hero-section {
+    background-color: #FFF0F3;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+.hero-photo img {
+    border: 5px solid #C9184A;
+}
+
+.hero-name {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 36px;
+}
+
+.hero-title {
+    color: #6c757d;
+}
+
+.hero-contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-contact-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.hero-contact-item:hover {
+    color: #C9184A;
+}
+
+.hero-contact-item i {
+    margin-right: 8px;
+}
+
+.skills-section {
+    background-color: #FFF0F3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.skills-title {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 18px;
+}
+
+.skill-item {
+    background-color: #ffffff;
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-name {
+    font-weight: 500;
+    flex: 2;
+}
+
+.skill-progress {
+    flex: 3;
+    height: 12px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    margin: 0 15px;
+    position: relative;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #FF4D6D;
+    border-radius: 6px;
+    transition: width 0.3s ease-in-out;
+}
+
+.skill-score {
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+    color: #343a40;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-style: italic;
+}
+
+.list-unstyled li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fa-check-circle {
+    margin-right: 10px;
+}
+
+
+.education-section {
+    background-color: #FFF0F3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.education-title {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.education-item {
+    background-color: #ffffff;
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.institution-name {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.education-duration {
+    font-size: 16px;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.education-specialty {
+    font-size: 16px;
+    color: #343a40;
+}
+
+.education-icon {
+    margin-right: 10px;
+    color: #C9184A;
+}
+
+.achievements-section {
+    background-color: #FFF0F3;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.achievements-title {
+    font-weight: 600;
+    color: #343a40;
+}
+
+.achievements-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.achievement-item {
+    background-color: #ffffff;
+    border: 1px solid #e3e6ea;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.achievement-icon {
+    font-size: 24px;
+    color: #C9184A;
+    margin-right: 15px;
+}
+
+.achievement-name {
+    font-weight: 500;
+    flex: 1;
+}
+
+.achievement-date {
+    font-weight: bold;
+    color: #FF4D6D;
+    margin-left: 15px;
+}
+
+.achievement-item:hover {
+    background-color: #FFCCD5;
+}
